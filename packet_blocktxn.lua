@@ -28,8 +28,8 @@ function packet.parse(protocol, tree, buffer, offset)
         -- Note when it starts
         local offset_tx_start = offset
 
-        local txSubtree = bodySubtree:add(protocol, buffer(offset),
-                                          "Transaction " .. tx_idx)
+        local txSubtree = tree:add(protocol, buffer(offset),
+                                   "Transaction " .. tx_idx)
 
         offset = TxPacket.parse_tx(protocol, txSubtree, buffer, offset)
 

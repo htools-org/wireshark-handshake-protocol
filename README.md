@@ -41,7 +41,7 @@ Although all packet types have been added, a few haven't been tested yet. Please
 | 22   | SENDCMPCT   | ✔️     | ✔️     |
 | 23   | CMPCTBLOCK  |        |        |
 | 24   | GETBLOCKTXN | ✔️     | ✔️     |
-| 25   | BLOCKTXN    | ✔️     |        |
+| 25   | BLOCKTXN    | ✔️     | ✔️     |
 | 26   | GETPROOF    | ✔️     | ✔️     |
 | 27   | PROOF       | ✔️     | ✔️     |
 | 28   | CLAIM       | ✔️     |        |
