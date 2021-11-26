@@ -9,8 +9,9 @@ local PACKET_TYPES = {
     "version", "verack", "verack", "ping", "pong", "getaddr", "addr", "inv",
     "getdata", "notfound", "getblocks", "getheaders", "headers", "sendheaders",
     "block", "tx", "reject", "mempool", "filterload", "filteradd",
-    "filterclear", "merkleblock", "feefilter", "sendcmpct", "getblocktxn",
-    "blocktxn", "getproof", "proof", "claim", "airdrop", "unknown"
+    "filterclear", "merkleblock", "feefilter", "sendcmpct", "cmpctblock",
+    "getblocktxn", "blocktxn", "getproof", "proof", "claim", "airdrop",
+    "unknown"
 }
 
 local packets = {}

@@ -39,7 +39,7 @@ Although all packet types have been added, a few haven't been tested yet. Please
 | 20   | MERKLEBLOCK | ✔️     | ✔️     |
 | 21   | FEEFILTER   | ✔️     |        |
 | 22   | SENDCMPCT   | ✔️     | ✔️     |
-| 23   | CMPCTBLOCK  |        |        |
+| 23   | CMPCTBLOCK  | ✔️     | ✔️     |
 | 24   | GETBLOCKTXN | ✔️     | ✔️     |
 | 25   | BLOCKTXN    | ✔️     | ✔️     |
 | 26   | GETPROOF    | ✔️     | ✔️     |
