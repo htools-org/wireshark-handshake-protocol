@@ -53,11 +53,9 @@ Although all packet types have been added, a few haven't been tested yet. Please
 Simply clone this repository into Wireshark's plugin directory.
 **Make sure the directory is called `handshake` and not anything else.**
 
-> Wireshark (personal) plugin directory:
->
-> - Windows: `%APPDATA%\Wireshark\plugins`
-> - Linux: `~/.local/lib/wireshark/plugins`
-> - macOS: `%APPDIR%/Contents/PlugIns/wireshark`
+> To find the location of Wireshark's (personal) plugin directory,
+> Open Wireshark -> Help -> About Wireshark -> Folder tab -> **Personal Lua Plugins** (not Personal Plugins)
+> Once cloned, `{PersonalLuaPlugins}/handshake/handshake.lua` must exist.
 
 ```bash
 cd ~/.local/lib/wireshark/plugins/
