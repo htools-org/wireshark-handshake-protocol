@@ -47,12 +47,12 @@ constants.PAYLOAD_TYPE_BY_VAL = {
 }
 
 constants.INV_TYPE_BY_VAL = {
-    [0] = "TX",
-    [1] = "BLOCK",
-    [2] = "FILTERED_BLOCK",
-    [3] = "CMPCT_BLOCK",
-    [4] = "CLAIM",
-    [5] = "AIRDROP"
+    [1] = "TX",
+    [2] = "BLOCK",
+    [3] = "FILTERED_BLOCK",
+    [4] = "CMPCT_BLOCK",
+    [5] = "CLAIM",
+    [6] = "AIRDROP"
 }
 
 constants.COVENANT_TYPE_BY_VAL = {
