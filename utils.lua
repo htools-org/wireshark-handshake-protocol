@@ -11,8 +11,8 @@ end
 
 function utils.get_services_list_string(services)
     local res = "["
-    if bit32.band(services, 1) ~= 0 then res = res .. " NETWORK" end
-    if bit32.band(services, 2) ~= 0 then res = res .. " BLOOM" end
+    if (services & 1) ~= 0 then res = res .. " NETWORK" end
+    if (services & 2) ~= 0 then res = res .. " BLOOM" end
     res = res .. " ]"
     return res
 end

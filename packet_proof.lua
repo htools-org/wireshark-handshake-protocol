@@ -46,7 +46,7 @@ function packet.parse(protocol, tree, buffer, offset)
     offset = offset + 2
 
     -- [type]
-    local type = bit32.rshift(field, 14)
+    local type = field >> 14
     tree:add(packet.fields.type, type) --
     :set_generated(true) --
     :append_text(" (" .. constants.PROOF_NODE_TYPE_BY_VAL[type] .. ")")
@@ -58,7 +58,7 @@ function packet.parse(protocol, tree, buffer, offset)
     offset = offset + 2
 
     -- Prefixes bitfield
-    local bsize = bit32.rshift(count + 7, 3)
+    local bsize = count + 7 >> 3
     tree:add_le(packet.fields.prefixes_bitfield, buffer(offset, bsize))
     offset = offset + bsize
 
@@ -73,7 +73,7 @@ function packet.parse(protocol, tree, buffer, offset)
 
         -- Read Prefix
         local prefix_size = buffer(offset, 1):le_uint()
-        if bit32.band(prefix_size, 0x80) then
+        if (prefix_size & 0x80) ~= 0 then
             -- prefix_size = prefix_size - 0x80
             -- prefix_size = prefix_size * 0x100
             -- prefix_size = prefix_size + buffer(offset, 1):le_uint()
